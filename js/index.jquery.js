@@ -4,12 +4,14 @@ $( document ).ready(function()
     console.log( "Start!" );
 
     //一些公共变量
+    let $bingo_game_fav = [];
+    let $menu = $("#menu");
     window.my_config =
     {
-        menu_num : $("#menu").children(".item").length,
-        menu_width : $("#menu").width(),
-        menu_item_width : $("#menu").width() / $("#menu").children(".item").length,
-        bingo_game_fav: false
+        menu_num : $menu.children(".item").length,
+        menu_width : $menu.width(),
+        menu_item_width : $menu.width() / $menu.children(".item").length,
+        bingo_game_fav: $bingo_game_fav
     };
 
 
@@ -19,7 +21,7 @@ $( document ).ready(function()
     //$("#page_bingo").load("bingo.html");
 
     //初始化页面
-    init_page();
+    init_page(0);
 
     //绑定菜单按钮点击事件
     $("#menu .item").on('click',function(){
@@ -29,10 +31,10 @@ $( document ).ready(function()
         select_page(this);
     });
 
-    //活动页面特殊处理
+    //活动页面返回按钮特殊处理
     $("#page_promo").find("div.close").on('click',function(){
         $("#page_promo").hide();
-        init_page();
+        init_page(0);
     });
 
     //首页公告跑马灯
@@ -53,17 +55,24 @@ $( document ).ready(function()
     //bingo主页bingo游戏列表加入收藏相关操作动画
     $("#page_bingo").find("b").on('click',function()
     {
+        let $index = $(this).parent().parent().index()
+        console.log($index);
         //判断是否已经收藏
-        if(!my_config.bingo_game_fav)
+        if(-1 === $.inArray($index, my_config.bingo_game_fav))
         {
+            //当前游戏加入收藏列表
+            my_config.bingo_game_fav.push($index);
             $(this).text("♥");
-            my_config.bingo_game_fav = true;
         }
         else
         {
+            //取消收藏，从收藏列表里删除
+            my_config.bingo_game_fav.splice($.inArray($index,my_config.bingo_game_fav),1);
             $(this).text("♡");
-            my_config.bingo_game_fav = false;
         }
+
+        //查看目前收藏的游戏索引
+        console.log(my_config.bingo_game_fav);
 
         //克隆一个元素做动画
         let $clone = $(this).clone(true);
@@ -86,10 +95,10 @@ $( document ).ready(function()
 /**
  * 初始化页面
  */
-function init_page() {
-    swich_menu_style($("#menu .item").eq(0));
-    move_bgc($("#menu .item").eq(0));
-    select_page($("#menu .item").eq(0));
+function init_page(index) {
+    swich_menu_style($("#menu .item").eq(index));
+    move_bgc($("#menu .item").eq(index));
+    select_page($("#menu .item").eq(index));
 }
 
 /**
