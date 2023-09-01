@@ -29,7 +29,7 @@ $( document ).ready(function() {
 
 
     $("#marquee").marquee();
-
+    console.log(123);
 
 });
 
