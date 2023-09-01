@@ -1,0 +1,91 @@
+html, body{ background: #333333; color: #213459;}
+html,body,h2,li,ol,div{ margin: 0; padding: 0;}
+body{}
+#wrap{ width: 375px; height: 812px; margin: 20px auto; overflow: hidden; background: url("BG.png") no-repeat top;}
+
+#page_home{ width: 375px; height: 812px; font-size: 0; margin-top: 44px; overflow-y: scroll; background: #ffffff;}
+#page_home img{ width: 100%;}
+#page_home .content{ width: 355px; margin-left: 10px;}
+#page_home .banner{ width: 375px;}
+#page_home .marquee{ height: 30px; line-height: 30px; font-size: 9pt; background: #E1EBFC;}
+#page_home .sign{ text-align: center; padding: 20px 0;}
+#page_home .sign img{ width: 260px; height: 33px;}
+.tv{}
+/*//ok*/
+#page_home .game{ margin-top: 20px;}
+#page_home .news{ margin-top: 20px; padding-bottom: 130px;}
+
+#page_bingo{ width: 375px; height: 812px; font-size: 0; margin-top: 44px; overflow-y: scroll; background: #ffffff;}
+#page_bingo .content{ width: 355px; margin-left: 10px;}
+#page_bingo img{ width: 100%;}
+#page_bingo .tv{ animation: movingtv 0.5s;}
+#page_bingo .video_game_menu{ margin-top: 20px;}
+#page_bingo .all_games{}
+
+#page_promo{ width: 375px; height: 812px; font-size: 0; overflow-y: scroll; background: #ffffff; position: relative; z-index: 10;}
+#page_promo .content{ width: 355px; margin-left: 10px;}
+#page_promo img{ width: 100%;}
+#page_promo .top_banner{ width: 375px;}
+#page_promo .promo_list{ }
+#page_promo .close{ text-align: center; cursor: pointer;}
+#page_promo .close img{ width: 66px; height: 66px;}
+
+#page_news{ width: 375px; height: 812px; font-size: 0; margin-top: 44px; overflow-y: scroll; background: #ffffff;}
+#page_news .content{ width: 355px; margin-left: 10px;}
+#page_news img{ width: 100%;}
+#page_news .news_menu{ }
+#page_news .news_list{ margin-top: 20px;}
+
+#page_my{ width: 375px; height: 812px; background: #1890FF; padding-top: 44px; font-size: 0; overflow-y: scroll;}
+#page_my .content{ width: 355px; margin-left: 10px;}
+#page_my img{ width: 100%;}
+#page_my .ava{ background: url("profile_ava_bg.png") no-repeat bottom; background-size: 100%;}
+#page_my .wallet{ margin-top: 20px;}
+#page_my .my_list{ margin-top: 20px;}
+
+#menu{ width: 375px; height: 80px; font-size: 0; position: absolute; top: 752px; text-align: center;  border-radius:20px 20px 0 0; background-image: url("bg_menu.png"); background-size: 100%; border-top: 1px solid #C6E8EA; backdrop-filter: blur(2px);}
+#menu .bg{ width: 375px; height: 80px; position: absolute; opacity: 1; z-index: 0;}
+#menu .item{ width: 20%; height: 80px; text-align: center; font-size: 12px; display: inline-block; position: relative; z-index: 2; color: #4D617C; cursor: pointer;}
+#menu .item span.ico{ width: 25px; height: 25px; text-align: center;  display: block; margin: 15px auto 0 auto;}
+#menu .focus{color:#ffffff; text-shadow: 0 0 10px #ffffff; animation: color_change 0.3s;}
+#menu .item span.focus{ text-shadow: 0 0 10px #ffffff;}
+
+.bgc{ width: 75px; height: 75px; border-radius: 75px; position: absolute; z-index: 1; background-image: url("menu_focus_bg.png"); background-size:cover; box-shadow: 0 0 10px #46D3FF; margin-top: -3px;}
+.shadow_change{ animation: shadow_change 1s;}
+
+.moving_action10{ animation: moving_tv 0.6s;}
+.moving_action20{ animation: moving 0.6s;}
+.moving_action0{ animation: moving_0 0.6s;}
+
+
+@keyframes color_change
+{
+    from {color: #4D617C;}
+    to {color: #ffffff;}
+}
+
+
+@keyframes shadow_change
+{
+    0 { box-shadow: 0 0 10px #46D3FF;}
+    50% { box-shadow: 0 0 40px #ff9212;}
+    100% { box-shadow: 0 0 10px #46D3FF;}
+}
+
+@keyframes moving_tv
+{
+    from {margin-top: 200px; opacity: 0;}
+    to {margin-top: 0; opacity: 1;}
+}
+
+@keyframes moving
+{
+    from {margin-top: 200px; opacity: 0;}
+    to {margin-top: 20px; opacity: 1;}
+}
+
+@keyframes moving_0
+{
+    from {margin-top: -100px; opacity: 0;}
+    to {margin-top: 0px; opacity: 1;}
+}
