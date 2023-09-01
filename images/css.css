@@ -1,9 +1,9 @@
 html, body{ background: #333333; color: #213459;}
-html,body,h2,li,ol,div{ margin: 0; padding: 0;}
+html,body,h2,ul,li,ol,div{ margin: 0; padding: 0;}
 body{}
 #wrap{ width: 375px; height: 812px; margin: 20px auto; overflow: hidden; background: url("BG.png") no-repeat top;}
 
-#page_home{ width: 375px; height: 812px; font-size: 0; margin-top: 44px; overflow-y: scroll; background: #ffffff;}
+#page_home{ width: 375px; height: 812px; font-size: 0; margin-top: 44px; overflow-x: hidden; overflow-y: scroll; background: #ffffff;}
 #page_home img{ width: 100%;}
 #page_home .content{ width: 355px; margin-left: 10px;}
 #page_home .banner{ width: 375px;}
@@ -11,18 +11,24 @@ body{}
 #page_home .sign{ text-align: center; padding: 20px 0;}
 #page_home .sign img{ width: 260px; height: 33px;}
 .tv{}
-/*//ok*/
 #page_home .game{ margin-top: 20px;}
 #page_home .news{ margin-top: 20px; padding-bottom: 130px;}
 
-#page_bingo{ width: 375px; height: 812px; font-size: 0; margin-top: 44px; overflow-y: scroll; background: #ffffff;}
+#page_bingo{ width: 375px; height: 812px; margin-top: 44px; overflow-x: hidden; overflow-y: scroll; background: #ffffff;}
 #page_bingo .content{ width: 355px; margin-left: 10px;}
 #page_bingo img{ width: 100%;}
 #page_bingo .tv{ animation: movingtv 0.5s;}
 #page_bingo .video_game_menu{ margin-top: 20px;}
-#page_bingo .all_games{}
+#page_bingo .all_games{ width: 355px; height: 400px; overflow-x: hidden; overflow-y: scroll;}
+#page_bingo .all_games ul{ width: 355px; padding-bottom: 40px; float: left;}
+#page_bingo .all_games li{ width: 173px; height: 100px; overflow: hidden; float: left; margin-right: 4px; margin-bottom: 5px;}
+#page_bingo .all_games li span{ width: 173px; display: block;}
+#page_bingo .all_games li span.pic{ width: 173px; height: 100px; position: relative; border-radius: 10px; overflow: hidden;}
+#page_bingo .all_games li span.pic img{ width: 173px; height: 100px;}
+#page_bingo .all_games li span.info{ width: 153px; height: 30px; line-height: 30px; padding: 0 10px; position: relative; margin-top: -30px; z-index: 2; color: #ffffff; background-color: rgba(0,0,0,0.5); border-radius: 0 0 10px 10px;}
+#page_bingo .all_games li span.info b{ float: right; cursor: pointer;}
 
-#page_promo{ width: 375px; height: 812px; font-size: 0; overflow-y: scroll; background: #ffffff; position: relative; z-index: 10;}
+#page_promo{ width: 375px; height: 812px; font-size: 0; overflow-x: hidden; overflow-y: scroll; background: #ffffff; position: relative; z-index: 10;}
 #page_promo .content{ width: 355px; margin-left: 10px;}
 #page_promo img{ width: 100%;}
 #page_promo .top_banner{ width: 375px;}
@@ -30,11 +36,18 @@ body{}
 #page_promo .close{ text-align: center; cursor: pointer;}
 #page_promo .close img{ width: 66px; height: 66px;}
 
-#page_news{ width: 375px; height: 812px; font-size: 0; margin-top: 44px; overflow-y: scroll; background: #ffffff;}
+#page_news{ width: 375px; height: 812px; font-size: 0; margin-top: 44px; overflow-x: hidden; overflow-y: scroll; background: #ffffff;}
 #page_news .content{ width: 355px; margin-left: 10px;}
 #page_news img{ width: 100%;}
 #page_news .news_menu{ }
-#page_news .news_list{ margin-top: 20px;}
+#page_news .news_list{ margin-top: 10px;}
+#page_news ul{ width: 335px; height: 700px;  overflow-x: hidden; overflow-y: scroll;  margin-left: 10px; position: relative;}
+#page_news ul li{ width: 335px; height: 100px; margin-top: 10px; overflow: hidden;}
+#page_news ul li span{ height: 100px; display: inline-block;}
+#page_news span.pic{ width: 170px; height: 100px; float: left;}
+#page_news span.pic img{ width: 170px; height: 100px;}
+#page_news span.txt{ width: 155px; height: 100px; margin-left: 10px; float: right;}
+#page_news span.txt img{ width: 155px; height: 100px;}
 
 #page_my{ width: 375px; height: 812px; background: #1890FF; padding-top: 44px; font-size: 0; overflow-y: scroll;}
 #page_my .content{ width: 355px; margin-left: 10px;}
@@ -43,7 +56,7 @@ body{}
 #page_my .wallet{ margin-top: 20px;}
 #page_my .my_list{ margin-top: 20px;}
 
-#menu{ width: 375px; height: 80px; font-size: 0; position: absolute; top: 752px; text-align: center;  border-radius:20px 20px 0 0; background-image: url("bg_menu.png"); background-size: 100%; border-top: 1px solid #C6E8EA; backdrop-filter: blur(2px);}
+#menu{ width: 375px; height: 80px; font-size: 0; position: absolute; z-index: 5; top: 752px; text-align: center;  border-radius:20px 20px 0 0; background-image: url("bg_menu.png"); background-size: 100%; border-top: 1px solid #C6E8EA; backdrop-filter: blur(2px);}
 #menu .bg{ width: 375px; height: 80px; position: absolute; opacity: 1; z-index: 0;}
 #menu .item{ width: 20%; height: 80px; text-align: center; font-size: 12px; display: inline-block; position: relative; z-index: 2; color: #4D617C; cursor: pointer;}
 #menu .item span.ico{ width: 25px; height: 25px; text-align: center;  display: block; margin: 15px auto 0 auto;}
@@ -56,7 +69,10 @@ body{}
 .moving_action10{ animation: moving_tv 0.6s;}
 .moving_action20{ animation: moving 0.6s;}
 .moving_action0{ animation: moving_0 0.6s;}
-
+.moving_left{ animation: moving_left 0.6s;}
+.moving_right{ animation: moving_right 0.6s;}
+.moving_zoom{ animation: moving_zoom 0.6s;}
+.moving_zoom_opacity{ animation: moving_zoom_opacity 0.6s;}
 
 @keyframes color_change
 {
@@ -67,15 +83,15 @@ body{}
 
 @keyframes shadow_change
 {
-    0 { box-shadow: 0 0 10px #46D3FF;}
+    0% { box-shadow: 0 0 10px #46D3FF;}
     50% { box-shadow: 0 0 40px #ff9212;}
     100% { box-shadow: 0 0 10px #46D3FF;}
 }
 
 @keyframes moving_tv
 {
-    from {margin-top: 200px; opacity: 0;}
-    to {margin-top: 0; opacity: 1;}
+    from { margin-top: 200px; opacity: 0;}
+    to { margin-top: 0; opacity: 1;}
 }
 
 @keyframes moving
@@ -88,4 +104,27 @@ body{}
 {
     from {margin-top: -100px; opacity: 0;}
     to {margin-top: 0px; opacity: 1;}
+}
+
+@keyframes moving_left
+{
+    from {margin-right: -100px; opacity: 0;}
+    to {margin-right: 0px; opacity: 1;}
+}
+@keyframes moving_right
+{
+    from {margin-left: -100px; opacity: 0;}
+    to {margin-left: 0px; opacity: 1;}
+}
+
+@keyframes moving_zoom
+{
+    from {transform: scale(0); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+@keyframes moving_zoom_opacity
+{
+    from {transform: scale(1); opacity: 1;}
+    to {transform: scale(3); opacity: 0;}
 }

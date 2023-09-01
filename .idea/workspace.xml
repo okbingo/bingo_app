@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc2bd4a8-341c-43e3-82e7-f2d3734bfab8" name="变更" comment="" />
+    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="增加了输出测试123">
+      <change afterPath="$PROJECT_DIR$/.idea/bingo_app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Game-list-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Game-list-pic2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Game-list-text.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/images/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.jquery.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,43 +21,71 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="3accf3c0-cd88-4649-ad66-f541d39ada11" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2UkjDX7GKCN6RSOaQsOKTD4VHIE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2UmEmUfwDKt008qaaLCp0pl1NJc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="cc2bd4a8-341c-43e3-82e7-f2d3734bfab8" name="变更" comment="" />
-      <created>1693490353444</created>
+      <changelist id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="" />
+      <created>1693536514106</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1693490353444</updated>
-      <workItem from="1693490354883" duration="53000" />
-      <workItem from="1693490495715" duration="54000" />
-      <workItem from="1693535094119" duration="82000" />
-      <workItem from="1693535179435" duration="82000" />
-      <workItem from="1693535270848" duration="23000" />
-      <workItem from="1693535294611" duration="49000" />
-      <workItem from="1693535364596" duration="677000" />
-      <workItem from="1693536107190" duration="102000" />
+      <updated>1693536514106</updated>
+      <workItem from="1693536515207" duration="15613000" />
     </task>
+    <task id="LOCAL-00001" summary="增加了输出测试123">
+      <created>1693536661162</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693536661162</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="增加了输出测试123" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了输出测试123" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
