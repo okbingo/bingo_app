@@ -14,9 +14,11 @@ $( document ).ready(function()
         bingo_game_fav: $bingo_game_fav
     };
 
+    $("#page_home .banner").carousel();
 
     let menu_focus_width = $("#menu .bgc").width();
 
+    //swich_banner(0);
     //console.log(menu_item_width);
     //$("#page_bingo").load("bingo.html");
 

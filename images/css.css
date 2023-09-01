@@ -6,7 +6,13 @@ body{}
 #page_home{ width: 375px; height: 812px; font-size: 0; margin-top: 44px; overflow-x: hidden; overflow-y: scroll; background: #ffffff;}
 #page_home img{ width: 100%;}
 #page_home .content{ width: 355px; margin-left: 10px;}
-#page_home .banner{ width: 375px;}
+#page_home .banner{ width: 375px; background: #000000;}
+#page_home .banner ul.pic{ width: 375px; height: 180px; overflow: hidden;}
+#page_home .banner ul.pic li{ width: 375px; height: 180px;}
+#page_home .banner ul.pic li img{ width: 375px; height: 180px;}
+#page_home .banner ul.page{ width: 375px; background:rgba(0,0,0,0.3); text-align:center; position: relative; margin-top: -20px;}
+#page_home .banner ul.page li{ width: 6px; height: 6px; margin: 6px 0; border-radius: 100%; background:rgba(255,255,255,0.2); display: inline-block; margin-left: 10px; border: 1px solid #ffffff;}
+#page_home .banner ul.page li.focus{ background:rgba(255,255,255,1); border: 1px solid #ffffff;}
 #page_home .marquee{ height: 30px; line-height: 30px; font-size: 9pt; background: #E1EBFC;}
 #page_home .sign{ text-align: center; padding: 20px 0;}
 #page_home .sign img{ width: 260px; height: 33px;}
