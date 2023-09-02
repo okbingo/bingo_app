@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/images/Banner1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Banner2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Banner3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Banner4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Banner5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.carousel.js" afterDir="false" />
+    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="手动轮播图逻辑">
+      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/images/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.carousel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +54,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693536514106</updated>
-      <workItem from="1693536515207" duration="25124000" />
+      <workItem from="1693536515207" duration="25790000" />
+      <workItem from="1693581952439" duration="616000" />
+      <workItem from="1693586562615" duration="598000" />
+      <workItem from="1693628014511" duration="511000" />
+      <workItem from="1693641541809" duration="1820000" />
     </task>
     <task id="LOCAL-00001" summary="增加了输出测试123">
       <created>1693536661162</created>
@@ -85,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693559097560</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="手动轮播图逻辑">
+      <created>1693565058015</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693565058015</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +110,8 @@
     <MESSAGE value="增加了输出测试123" />
     <MESSAGE value="1、新闻列表也动画；&#10;2、bingo主页游戏列表动画；&#10;3、游戏收藏动画；" />
     <MESSAGE value="bingo游戏列表收藏逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="bingo游戏列表收藏逻辑" />
+    <MESSAGE value="手动轮播图逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="手动轮播图逻辑" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

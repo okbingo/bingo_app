@@ -7,42 +7,54 @@
         {
             content: "#page_home .banner",
             time: 500,
+            keep: 3000
         };
 
         //合并用户的配置项
         let setting = $.extend(defaultSet, options || {});
+        let intervalId;
+        let index = 0;
 
         return this.each(function()
         {
-
+            //句柄点击事件
             $(setting.content + " ul.page li").on('click',function()
             {
-                console.log($(this).index());
                 swich_banner($(this).index());
             });
 
+            //自动播放
+            intervalId = setInterval(function()
+            {
+                swich_banner(index);
+
+                if(index > 4)
+                {
+                    index = 0;
+                }
+            }, setting.keep);
+
         });
 
-        function swich_banner(index)
+        /**
+         * 轮播切换函数
+         * @param i
+         */
+        function swich_banner(i)
         {
-            let $index = index
+            index = i
             $(setting.content + " ul.pic li").each(function()
             {
-                console.log($(this).index());
-                if($index === $(this).index())
+                if(index === $(this).index())
                 {
+                    //console.log($(this).index());
                     $(this).hide().fadeToggle(setting.time);
                     $(this).siblings().show().fadeToggle(setting.time);
-                    $(this).parent().parent().find(".page li").eq($index).addClass("focus");
-                    $(this).parent().parent().find(".page li").eq($index).siblings().removeClass("focus");
+                    $(this).parent().parent().find(".page li").eq(index).addClass("focus");
+                    $(this).parent().parent().find(".page li").eq(index).siblings().removeClass("focus");
                 }
             });
+            index++;
         }
-
-        function aaa(num)
-        {
-            console.log(setting.zIndex + num);
-        }
-
     };
 })(jQuery);
