@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="使用alwaysdata数据库">
+    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="文件整理">
+      <change afterPath="$PROJECT_DIR$/js/jquery.news.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/images/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.carousel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +45,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -57,7 +67,8 @@
       <workItem from="1693581952439" duration="616000" />
       <workItem from="1693586562615" duration="598000" />
       <workItem from="1693628014511" duration="511000" />
-      <workItem from="1693641541809" duration="11246000" />
+      <workItem from="1693641541809" duration="12124000" />
+      <workItem from="1693726274965" duration="10085000" />
     </task>
     <task id="LOCAL-00001" summary="增加了输出测试123">
       <created>1693536661162</created>
@@ -101,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693719853228</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="文件整理">
+      <created>1693720224970</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693720224970</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +144,8 @@
     <MESSAGE value="手动轮播图逻辑" />
     <MESSAGE value="自动轮播图逻辑&#10;ico" />
     <MESSAGE value="使用alwaysdata数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用alwaysdata数据库" />
+    <MESSAGE value="文件整理" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件整理" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

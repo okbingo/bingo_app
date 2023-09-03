@@ -2,6 +2,14 @@ html, body{ background: #333333; color: #213459;}
 html,body,h2,ul,li,ol,div{ margin: 0; padding: 0;}
 body{}
 #wrap{ width: 375px; height: 812px; margin: 20px auto; overflow: hidden; background: url("BG.png") no-repeat top;}
+a { color: #213459; text-decoration: none;}
+a:link { color: #213459;}
+a:visited { color: #213459;}
+a:hover { color: #1890FF;}
+a:active { color: #213459;}
+.focus a { color: #1890FF;}
+
+
 
 #page_home{ width: 375px; height: 812px; font-size: 0; margin-top: 44px; overflow-x: hidden; overflow-y: scroll; background: #ffffff;}
 #page_home img{ width: 100%;}
@@ -42,18 +50,23 @@ body{}
 #page_promo .close{ text-align: center; cursor: pointer;}
 #page_promo .close img{ width: 66px; height: 66px;}
 
-#page_news{ width: 375px; height: 812px; font-size: 0; margin-top: 44px; overflow-x: hidden; overflow-y: scroll; background: #ffffff;}
+#page_news{ width: 375px; height: 812px; margin-top: 44px; overflow-x: hidden; overflow-y: scroll; background: #ffffff;}
 #page_news .content{ width: 355px; margin-left: 10px;}
 #page_news img{ width: 100%;}
-#page_news .news_menu{ }
+#page_news .news_menu{ margin-top: 20px;}
 #page_news .news_list{ margin-top: 10px;}
-#page_news ul{ width: 335px; height: 700px;  overflow-x: hidden; overflow-y: scroll;  margin-left: 10px; position: relative;}
-#page_news ul li{ width: 335px; height: 100px; margin-top: 10px; overflow: hidden;}
-#page_news ul li span{ height: 100px; display: inline-block;}
+#page_news .news_list ul{ width: 335px; height: 700px;  overflow-x: hidden; overflow-y: scroll;  margin-left: 10px; position: relative;}
+#page_news .news_list ul li{ width: 335px; height: 100px; margin-top: 10px; overflow: hidden;}
+#page_news .news_list ul li span{ height: 100px; display: inline-block;}
 #page_news span.pic{ width: 170px; height: 100px; float: left;}
-#page_news span.pic img{ width: 170px; height: 100px;}
+#page_news span.pic img{ width: 170px; height: 100px; border-radius: 10px;}
 #page_news span.txt{ width: 155px; height: 100px; margin-left: 10px; float: right;}
 #page_news span.txt img{ width: 155px; height: 100px;}
+#page_news span.txt b{ display: block;}
+#page_news span.txt b.tit{ width: 100%; height: 80px; font-size: 9pt; line-height: 12pt; overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical;}
+#page_news span.txt b.date{ height: 20px; font-size: 8pt; font-weight: normal; color: #A3ADC0;}
 
 #page_my{ width: 375px; height: 812px; background: #1890FF; padding-top: 44px; font-size: 0; overflow-y: scroll;}
 #page_my .content{ width: 355px; margin-left: 10px;}
@@ -68,6 +81,12 @@ body{}
 #menu .item span.ico{ width: 25px; height: 25px; text-align: center;  display: block; margin: 15px auto 0 auto;}
 #menu .focus{color:#ffffff; text-shadow: 0 0 10px #ffffff; animation: color_change 0.3s;}
 #menu .item span.focus{ text-shadow: 0 0 10px #ffffff;}
+
+
+.tab{ width: 100%;}
+.tab ul{ width: 100%; border-bottom: 1px solid #B4BAD4; font-size: 0;}
+.tab ul li{ width: 33.3%; height: 30px; line-height: 30px; text-align: center; display: inline-block; font-size: 9pt;}
+.tab ul li.focus{ color: #1890FF; border-bottom: 2px solid #1890FF;}
 
 .bgc{ width: 75px; height: 75px; border-radius: 75px; position: absolute; z-index: 1; background-image: url("menu_focus_bg.png"); background-size:cover; box-shadow: 0 0 10px #46D3FF; margin-top: -3px;}
 .shadow_change{ animation: shadow_change 1s;}

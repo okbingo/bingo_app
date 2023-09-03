@@ -18,7 +18,7 @@
 
         return this.each(function()
         {
-            console.log(setting.num);
+            //console.log(setting.num);
 
             buildHTML(setting.num);
 

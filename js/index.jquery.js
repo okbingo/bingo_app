@@ -2,8 +2,7 @@ $( document ).ready(function()
 {
     //开始咯
     console.log( "Start!" );
-    //初始化数据
-    init_data();
+    $("#page_news").news();
 
     //一些公共变量
     let $bingo_game_fav = [];
@@ -14,9 +13,13 @@ $( document ).ready(function()
         menu_width : $menu.width(),
         menu_item_width : $menu.width() / $menu.children(".item").length,
         bingo_game_fav: $bingo_game_fav,
-        data_domain: 'https://okbingo-e2222cbc833d.herokuapp.com',
+        //data_domain: 'http://localhost:8888/',
+        data_domain: 'https://okbingo-e2222cbc833d.herokuapp.com/',
         data_domain_path:'/public/index.php'
     };
+
+    //获取banner
+    get_banner();
 
     let menu_focus_width = $("#menu .bgc").width();
 
@@ -25,11 +28,11 @@ $( document ).ready(function()
     //$("#page_bingo").load("bingo.html");
 
     //初始化页面
-    init_page(0);
+    init_page(3);
 
     //绑定菜单按钮点击事件
     $("#menu .item").on('click',function(){
-        console.log( $(this).index() );
+        //console.log( $(this).index() );
         move_bgc(this);
         swich_menu_style(this);
         select_page(this);
@@ -44,12 +47,6 @@ $( document ).ready(function()
     //首页公告跑马灯
     $("#marquee").marquee();
 
-    //延时新闻列表淡入特效
-    $("#page_news .news_list .list").each(function(){
-        let $index = $(this).index();
-        $("#page_news .news_list .list").eq($index).find("span").css("animation-delay",100*$index + "ms");
-    });
-
     //Bingo游戏列表淡入特效
     $("#page_bingo .all_games ul li").each(function(){
         let $index = $(this).index();
@@ -60,7 +57,7 @@ $( document ).ready(function()
     $("#page_bingo").find("b").on('click',function()
     {
         let $index = $(this).parent().parent().index()
-        console.log($index);
+        //console.log($index);
         //判断是否已经收藏
         if(-1 === $.inArray($index, my_config.bingo_game_fav))
         {
@@ -97,9 +94,9 @@ $( document ).ready(function()
 });
 
 /**
- * 初始化数据
+ * 获取banner数据
  */
-function init_data()
+function get_banner()
 {
     $.ajax
     ({
@@ -108,12 +105,13 @@ function init_data()
         dataType:"json",
         success: function(data)
         {
-            //console.log(data[0]);
+            console.log(data);
             init_banner(data);
         },
         error: function(){},
     })
 }
+
 
 /**
  * 初始化页面
@@ -133,7 +131,7 @@ function init_banner(data)
     //console.log(data.length);
     for (let i=0;i<data.length;i++)
     {
-        console.log(i);
+        //console.log(i);
         $("#page_home .banner ul.pic").append("<li><img src='"+ data[i].url +"'/></li>");
     }
 
@@ -141,12 +139,14 @@ function init_banner(data)
     //$("#page_home .banner ul.pic").appendTo("<li></li>");
 }
 
+
+
 /**
  * 移动菜单焦点图形
  * @param obj
  */
 function move_bgc(obj) {
-    console.log($(".bgc").width());
+    //console.log($(".bgc").width());
     let coordinate = $(obj).index()* my_config.menu_item_width - my_config.menu_item_width;
     $(".bgc").animate({left: coordinate + 'px'}, 1000, 'easeOutBounce',function(){ $(".bgc").removeClass("shadow_change"); });
     $(".bgc").addClass("shadow_change");
@@ -168,7 +168,7 @@ function swich_menu_style(obj){
  * @param obj
  */
 function select_page(obj) {
-    console.log($(obj).children(".ico").attr("name"));
+    //console.log($(obj).children(".ico").attr("name"));
     let $name = $(obj).children(".ico").attr("name");
     $("#wrap").find("#page_"+ $name).show();
     $("#wrap").find("#page_"+ $name).siblings().hide();
