@@ -2,7 +2,8 @@ $( document ).ready(function()
 {
     //开始咯
     console.log( "Start!" );
-    aaa();
+    //初始化数据
+    init_data();
 
     //一些公共变量
     let $bingo_game_fav = [];
@@ -12,10 +13,10 @@ $( document ).ready(function()
         menu_num : $menu.children(".item").length,
         menu_width : $menu.width(),
         menu_item_width : $menu.width() / $menu.children(".item").length,
-        bingo_game_fav: $bingo_game_fav
+        bingo_game_fav: $bingo_game_fav,
+        data_domain: 'https://okbingo-e2222cbc833d.herokuapp.com',
+        data_domain_path:'/public/index.php'
     };
-
-
 
     let menu_focus_width = $("#menu .bgc").width();
 
@@ -95,40 +96,14 @@ $( document ).ready(function()
 
 });
 
+/**
+ * 初始化数据
+ */
 function init_data()
 {
     $.ajax
     ({
-        async : true,
-        url : "http://localhost:8888/public/index.php/index/index/get_userinfo",
-        type : "GET",
-        dataType : "jsonp", // 返回的数据类型，设置为JSONP方式
-        jsonp : 'callback', //指定一个查询参数名称来覆盖默认的 jsonp 回调参数名 callback
-        jsonpCallback: 'handleResponse', //设置回调函数名
-        data : {
-            q : "javascript",
-            count : 1
-        },
-        success: function(response, status, xhr){
-            console.log('状态为：' + status + ',状态是：' + xhr.statusText);
-            console.log(response);
-        }
-    });
-
-
-    function handleResponse(response){
-        // 对response数据进行操作代码
-        console.log(response + "jsonp success!");
-    }
-
-}
-
-
-function aaa()
-{
-    $.ajax
-    ({
-        url:"https://okbingo-e2222cbc833d.herokuapp.com/public/index.php/index/get_banner",
+        url:my_config.data_domain + my_config.data_domain_path + "/index/get_banner",
         type:"get",
         dataType:"json",
         success: function(data)
@@ -149,7 +124,10 @@ function init_page(index) {
     select_page($("#menu .item").eq(index));
 }
 
-
+/**
+ * 初始化banner
+ * @param data
+ */
 function init_banner(data)
 {
     //console.log(data.length);

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="自动轮播图逻辑&#10;ico">
+    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="使用alwaysdata数据库">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.carousel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,7 @@
       <workItem from="1693581952439" duration="616000" />
       <workItem from="1693586562615" duration="598000" />
       <workItem from="1693628014511" duration="511000" />
-      <workItem from="1693641541809" duration="10876000" />
+      <workItem from="1693641541809" duration="11246000" />
     </task>
     <task id="LOCAL-00001" summary="增加了输出测试123">
       <created>1693536661162</created>
@@ -96,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693644642286</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="使用alwaysdata数据库">
+      <created>1693719853228</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693719853228</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +125,8 @@
     <MESSAGE value="bingo游戏列表收藏逻辑" />
     <MESSAGE value="手动轮播图逻辑" />
     <MESSAGE value="自动轮播图逻辑&#10;ico" />
-    <option name="LAST_COMMIT_MESSAGE" value="自动轮播图逻辑&#10;ico" />
+    <MESSAGE value="使用alwaysdata数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用alwaysdata数据库" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
