@@ -7,7 +7,8 @@
         {
             content: "#page_home .banner",
             time: 500,
-            keep: 3000
+            keep: 3000,
+            num: 1
         };
 
         //合并用户的配置项
@@ -17,6 +18,10 @@
 
         return this.each(function()
         {
+            console.log(setting.num);
+
+            buildHTML(setting.num);
+
             //句柄点击事件
             $(setting.content + " ul.page li").on('click',function()
             {
@@ -56,5 +61,19 @@
             });
             index++;
         }
+
+        /**
+         * 构建page翻页
+         * @param i
+         */
+        function buildHTML(i)
+        {
+            for (let j=0; j<i; j++)
+            {
+                $(setting.content).find(".page").append("<li></li>");
+            }
+            $(setting.content).find(".page li").first().addClass("focus");
+        }
+
     };
 })(jQuery);

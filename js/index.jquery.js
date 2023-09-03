@@ -2,6 +2,7 @@ $( document ).ready(function()
 {
     //开始咯
     console.log( "Start!" );
+    aaa();
 
     //一些公共变量
     let $bingo_game_fav = [];
@@ -14,7 +15,7 @@ $( document ).ready(function()
         bingo_game_fav: $bingo_game_fav
     };
 
-    $("#page_home .banner").carousel();
+
 
     let menu_focus_width = $("#menu .bgc").width();
 
@@ -94,6 +95,51 @@ $( document ).ready(function()
 
 });
 
+function init_data()
+{
+    $.ajax
+    ({
+        async : true,
+        url : "http://localhost:8888/public/index.php/index/index/get_userinfo",
+        type : "GET",
+        dataType : "jsonp", // 返回的数据类型，设置为JSONP方式
+        jsonp : 'callback', //指定一个查询参数名称来覆盖默认的 jsonp 回调参数名 callback
+        jsonpCallback: 'handleResponse', //设置回调函数名
+        data : {
+            q : "javascript",
+            count : 1
+        },
+        success: function(response, status, xhr){
+            console.log('状态为：' + status + ',状态是：' + xhr.statusText);
+            console.log(response);
+        }
+    });
+
+
+    function handleResponse(response){
+        // 对response数据进行操作代码
+        console.log(response + "jsonp success!");
+    }
+
+}
+
+
+function aaa()
+{
+    $.ajax
+    ({
+        url:"https://okbingo-e2222cbc833d.herokuapp.com/public/index.php/index/get_banner",
+        type:"get",
+        dataType:"json",
+        success: function(data)
+        {
+            //console.log(data[0]);
+            init_banner(data);
+        },
+        error: function(){},
+    })
+}
+
 /**
  * 初始化页面
  */
@@ -101,6 +147,20 @@ function init_page(index) {
     swich_menu_style($("#menu .item").eq(index));
     move_bgc($("#menu .item").eq(index));
     select_page($("#menu .item").eq(index));
+}
+
+
+function init_banner(data)
+{
+    //console.log(data.length);
+    for (let i=0;i<data.length;i++)
+    {
+        console.log(i);
+        $("#page_home .banner ul.pic").append("<li><img src='"+ data[i].url +"'/></li>");
+    }
+
+    $("#page_home .banner").carousel({ num: data.length });
+    //$("#page_home .banner ul.pic").appendTo("<li></li>");
 }
 
 /**

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="手动轮播图逻辑">
-      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="自动轮播图逻辑&#10;ico">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/jquery.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.carousel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -58,7 +59,7 @@
       <workItem from="1693581952439" duration="616000" />
       <workItem from="1693586562615" duration="598000" />
       <workItem from="1693628014511" duration="511000" />
-      <workItem from="1693641541809" duration="1820000" />
+      <workItem from="1693641541809" duration="10876000" />
     </task>
     <task id="LOCAL-00001" summary="增加了输出测试123">
       <created>1693536661162</created>
@@ -88,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693565058015</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="自动轮播图逻辑&#10;ico">
+      <created>1693644642286</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693644642286</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +119,8 @@
     <MESSAGE value="1、新闻列表也动画；&#10;2、bingo主页游戏列表动画；&#10;3、游戏收藏动画；" />
     <MESSAGE value="bingo游戏列表收藏逻辑" />
     <MESSAGE value="手动轮播图逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="手动轮播图逻辑" />
+    <MESSAGE value="自动轮播图逻辑&#10;ico" />
+    <option name="LAST_COMMIT_MESSAGE" value="自动轮播图逻辑&#10;ico" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
