@@ -78,7 +78,7 @@ a:active { color: #213459;}
 #page_my .top span.inbox{ position: relative; z-index: 1;}
 #page_my .top .badge{ margin: -4px 0 0 14px;}
 #page_my .top span.wallet{ float: right;}
-#page_my .information{ width: 100%; margin: 10px 0; height: 150px; color: #ffffff; border-radius: 20px; background: url("Infomation_bg.jpg") no-repeat; background-size: cover; box-shadow: 0px 0px 8px 0px rgba(72, 167, 254, 0.5);}
+#page_my .information{ width: 100%; margin: 10px 0; padding-bottom: 10px; color: #ffffff; border-radius: 20px; background: url("Infomation_bg.jpg") no-repeat; background-size: cover; box-shadow: 0px 0px 8px 0px rgba(72, 167, 254, 0.5);}
 #page_my .information .info{ width: calc(100% - 40px); height: 40px;padding: 14px 0; margin-left: 20px; float: left; border-bottom: 1px solid rgba(0,0,0,0.1);}
 #page_my .information .info span{ display: inline-block; float: left;}
 #page_my .information .info span.ava{ width: 32px; height: 32px; border-radius: 100%; border: 5px solid rgba(0,0,0,0.1); overflow: hidden;}
@@ -89,11 +89,11 @@ a:active { color: #213459;}
 #page_my .information .balance span.tit{ position: absolute; margin-top: -15px; font-size: 8pt; font-weight: lighter;}
 #page_my .information .balance span.amount{ font-size: 24pt; text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);}
 #page_my .information .balance span.fresh{ float: right; margin-top: 9px;}
-#page_my .btns{ width: calc(100% - 20px); margin-left: 10px; background: #4D617C; font-size: 0;}
-#page_my .btns div.btn{ width: calc(50% - 5px); height: 40px; line-height: 40px; display: inline-block; font-size: 12pt; border-radius: 20px; text-align: center; overflow: hidden;}
-#page_my .btns div.deposit{ float: left; background: linear-gradient(#1890FF, #5276FF); color: #ffffff; box-shadow: 0px 0px 8px 0px rgba(72, 167, 254, 0.5);}
+#page_my .btns{ width: calc(100% - 20px); margin-left: 10px; background: #4D617C; font-size: 0; margin-top: 10px;}
+#page_my .btns div.btn{ width: calc(50% - 5px); height: 40px; line-height: 40px; display: inline-block; font-size: 12pt; border-radius: 10px; text-align: center; overflow: hidden;}
+#page_my .btns div.deposit{ float: left; background: linear-gradient(#1890FF, #5276FF); color: #ffffff; box-shadow: 0px 0px 8px 0px rgba(72, 167, 254, 0.5); border: 1px solid rgba(255,255,255,0.2)}
 #page_my .btns div.btn span{ display: inline-block}
-#page_my .btns div.withdraw{ float: right; background: #E1E5EA}
+#page_my .btns div.withdraw{ float: right; color: #213459; background: #E1E5EA;}
 #page_my .btns span.ico{ height: 40px;}
 #page_my .btns span.ico img{ vertical-align: middle; width: 22px; height: 24px;}
 #page_my .btns span.label{ font-size: 9pt;}
