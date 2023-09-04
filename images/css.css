@@ -40,7 +40,8 @@ a:active { color: #213459;}
 #page_bingo .all_games li span.pic{ width: 173px; height: 100px; position: relative; border-radius: 10px; overflow: hidden;}
 #page_bingo .all_games li span.pic img{ width: 173px; height: 100px;}
 #page_bingo .all_games li span.info{ width: 153px; height: 30px; line-height: 30px; padding: 0 10px; position: relative; margin-top: -30px; z-index: 2; color: #ffffff; background-color: rgba(0,0,0,0.5); border-radius: 0 0 10px 10px;}
-#page_bingo .all_games li span.info b{ float: right; cursor: pointer;}
+#page_bingo .all_games li span.info b.name{ float: left; width: 120px; font-weight: normal;overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+#page_bingo .all_games li span.info b.fav{ float: right; cursor: pointer;}
 
 #page_promo{ width: 375px; height: 812px; font-size: 0; overflow-x: hidden; overflow-y: scroll; background: #ffffff; position: relative; z-index: 10;}
 #page_promo .content{ width: 355px; margin-left: 10px;}
