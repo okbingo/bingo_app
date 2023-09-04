@@ -16,6 +16,14 @@
         return this.each(function()
         {
             get_news_list()
+
+            $('#page_my .my_list ul li').mousedown(function(){
+                $(this).css("background","rgba(0,0,0,0.03)");
+            });
+
+            $('#page_my .my_list ul li').mouseup(function(){
+                $(this).css("background","none");
+            });
         });
 
 
@@ -26,10 +34,12 @@
         {
             $('#page_my .my_list ul li span.title').slideUp();
 
-            $('#page_my .my_list ul li span.title').each(function(index) {
-                console.log(index);
+            $('#page_my .my_list ul li span.title').each(function(index)
+            {
                 $(this).delay(100 * index).slideDown(100);
             });
+
+
 
         }
 

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="个人中心动画">
+    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="优化my充值提现按钮区域">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/images/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.my.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.my.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,7 @@
       <workItem from="1693628014511" duration="511000" />
       <workItem from="1693641541809" duration="12124000" />
       <workItem from="1693726274965" duration="12564000" />
-      <workItem from="1693791543333" duration="23359000" />
+      <workItem from="1693791543333" duration="26836000" />
     </task>
     <task id="LOCAL-00001" summary="增加了输出测试123">
       <created>1693536661162</created>
@@ -145,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693822260404</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="优化my充值提现按钮区域">
+      <created>1693823356244</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1693823356244</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +183,8 @@
     <MESSAGE value="添加ico" />
     <MESSAGE value="解决游戏列表收藏的问题" />
     <MESSAGE value="个人中心动画" />
-    <option name="LAST_COMMIT_MESSAGE" value="个人中心动画" />
+    <MESSAGE value="优化my充值提现按钮区域" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化my充值提现按钮区域" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -15,6 +15,9 @@
 
         return this.each(function()
         {
+            //首页公告跑马灯
+            $("#marquee").marquee();
+
             get_banner();
         });
 

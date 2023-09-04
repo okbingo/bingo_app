@@ -43,8 +43,7 @@ $( document ).ready(function()
         init_page(0);
     });
 
-    //首页公告跑马灯
-    $("#marquee").marquee();
+
 
     //Bingo游戏列表淡入特效
     $("#page_bingo .all_games ul li").each(function(){
