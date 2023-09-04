@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="添加ico">
-      <change afterPath="$PROJECT_DIR$/js/jquery.ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.home.js" afterDir="false" />
+    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="解决游戏列表收藏的问题">
+      <change afterPath="$PROJECT_DIR$/images/Infomation_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ava/ava1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ava/ava10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ava/ava2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ava/ava3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ava/ava4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ava/ava5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ava/ava6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ava/ava7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ava/ava8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ava/ava9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/deposit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ico/li-about-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ico/li-betting-records.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ico/li-feedback.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ico/li-profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ico/li-self-exclusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ico/li-statement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/withdraw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.my.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/images/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/images/css.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -70,7 +87,7 @@
       <workItem from="1693628014511" duration="511000" />
       <workItem from="1693641541809" duration="12124000" />
       <workItem from="1693726274965" duration="12564000" />
-      <workItem from="1693791543333" duration="1568000" />
+      <workItem from="1693791543333" duration="22325000" />
     </task>
     <task id="LOCAL-00001" summary="增加了输出测试123">
       <created>1693536661162</created>
@@ -135,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693739011577</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="解决游戏列表收藏的问题">
+      <created>1693793164694</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693793164694</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +187,8 @@
     <MESSAGE value="文件整理" />
     <MESSAGE value="新闻列表拉取数据" />
     <MESSAGE value="添加ico" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加ico" />
+    <MESSAGE value="解决游戏列表收藏的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决游戏列表收藏的问题" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

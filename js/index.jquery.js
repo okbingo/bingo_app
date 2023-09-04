@@ -6,6 +6,7 @@ $( document ).ready(function()
     $("#page_home").home();
     $("#page_news").news();
     $("#page_bingo").game();
+    $("#page_my").my();
 
     //一些公共变量
     let $bingo_game_fav = [];
@@ -26,7 +27,7 @@ $( document ).ready(function()
     //$("#page_bingo").load("bingo.html");
 
     //初始化页面
-    init_page(1);
+    init_page(4);
 
     //绑定菜单按钮点击事件
     $("#menu .item").on('click',function(){
