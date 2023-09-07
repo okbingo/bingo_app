@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="my菜单列表点击响应">
-      <change afterPath="$PROJECT_DIR$/Aniki Hamster.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bodymovin_5.12.2_lottie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.lottie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottie/focus/bingo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottie/focus/home.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottie/focus/my.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottie/focus/news.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottie/focus/promo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottie/normal/bingo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottie/normal/home.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottie/normal/my.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottie/normal/news.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottie/normal/promo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/images/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.home.js" afterDir="false" />
+    <list default="true" id="840bf379-d827-43b1-b6b1-f9c6759a72b6" name="变更" comment="菜单ico图标Lottie动画，略有瑕疵">
+      <change beforePath="$PROJECT_DIR$/images/Banner2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Banner2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Banner3.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Banner3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Banner4.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Banner4.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +72,7 @@
       <workItem from="1693628014511" duration="511000" />
       <workItem from="1693641541809" duration="12124000" />
       <workItem from="1693726274965" duration="12564000" />
-      <workItem from="1693791543333" duration="59903000" />
+      <workItem from="1693791543333" duration="60565000" />
     </task>
     <task id="LOCAL-00001" summary="增加了输出测试123">
       <created>1693536661162</created>
@@ -182,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693826789698</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="菜单ico图标Lottie动画，略有瑕疵">
+      <created>1694069429009</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694069429009</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +214,8 @@
     <MESSAGE value="个人中心动画" />
     <MESSAGE value="优化my充值提现按钮区域" />
     <MESSAGE value="my菜单列表点击响应" />
-    <option name="LAST_COMMIT_MESSAGE" value="my菜单列表点击响应" />
+    <MESSAGE value="菜单ico图标Lottie动画，略有瑕疵" />
+    <option name="LAST_COMMIT_MESSAGE" value="菜单ico图标Lottie动画，略有瑕疵" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
