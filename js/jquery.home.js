@@ -15,11 +15,20 @@
 
         return this.each(function()
         {
+            init();
+        });
+
+        /**
+         * 初始化
+         */
+        function init()
+        {
             //首页公告跑马灯
             $("#marquee").marquee();
 
+            //banner
             get_banner();
-        });
+        }
 
         /**
          * 获取banner数据

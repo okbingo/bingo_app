@@ -124,7 +124,7 @@ a:active { color: #213459;}
 .tab ul li.focus{ color: #1890FF; border-bottom: 2px solid #1890FF;}
 
 .badge{ width: 9px; height: 9px; border-radius: 100%; background: radial-gradient(#FF8EA1, #FA2F30, #ffffff); position: absolute; border: 1px solid #4D607C; z-index: 10;}
-.bgc{ width: 75px; height: 75px; border-radius: 75px; position: absolute; z-index: 1; background-image: url("menu_focus_bg.png"); background-size:cover; box-shadow: 0 0 10px #46D3FF; margin-top: -3px;}
+.bgc{ width: 75px; height: 75px; display: block; border-radius: 75px; position: absolute; z-index: 1; background-image: url("menu_focus_bg.png"); background-size:cover; box-shadow: 0 0 10px #46D3FF; margin-top: -3px;}
 .shadow_change{ animation: shadow_change 1s;}
 .background_change{ animation: background_change 5s infinite;}
 
@@ -218,4 +218,9 @@ a:active { color: #213459;}
     50%,100% {
         transform: rotate(0deg);
     }
+}
+#newScene{
+    stroke: red;
+    /*or*/
+    fill: red;
 }

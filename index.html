@@ -14,12 +14,19 @@
     <script src="js/jquery.game.js"></script>
     <script src="js/jquery.home.js"></script>
     <script src="js/jquery.my.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/bodymovin_5.12.2_lottie.min.js"></script>
+<!--    <script src="js/jquery.lottie.js"></script>-->
     <script src="js/index.jquery.js"></script>
+
+
+
 </head>
 <body>
 <div id="wrap">
     <div class="content">
         <div id="page_home" class="page">
+
             <div class="banner">
                 <ul class="pic"></ul>
                 <ul class="page"></ul>
@@ -209,23 +216,12 @@
     </div>
 
     <div id="menu">
-        <div class="bgc"></div>
-        <div class="item focus"><span class="ico focus home" name="home"><svg width="25" height="24" viewBox="0 0 25 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.8356 2.25259C12.2145 1.9158 12.7855 1.9158 13.1644 2.25259L22.1644 10.2526C22.5772 10.6195 22.6143 11.2516 22.2474 11.6644C21.8805 12.0771 21.2484 12.1143 20.8356 11.7474L20.5 11.4491V19C20.5 20.1046 19.6046 21 18.5 21H6.50001C5.39544 21 4.50001 20.1046 4.50001 19V11.4491L4.16437 11.7474C3.75159 12.1143 3.11952 12.0771 2.7526 11.6644C2.38568 11.2516 2.42286 10.6195 2.83565 10.2526L11.8356 2.25259ZM6.50001 9.67129V19H9.50001V14C9.50001 13.4477 9.94773 13 10.5 13H14.5C15.0523 13 15.5 13.4477 15.5 14V19H18.5V9.67129L12.5 4.33795L6.50001 9.67129ZM13.5 19V15H11.5V19H13.5Z"/>
-</svg></span>HOME</div>
-        <div class="item"><span class="ico" name="bingo"><svg width="25" height="24" viewBox="0 0 25 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.5 4C6.94772 4 6.5 4.44772 6.5 5V12V19C6.5 19.5523 6.94772 20 7.5 20H14C16.4853 20 18.5 17.9853 18.5 15.5C18.5 13.5575 17.2692 11.9025 15.5449 11.2722C16.1433 10.5081 16.5 9.54573 16.5 8.5C16.5 6.01472 14.4853 4 12 4H7.5ZM12 11H8.5V6H12C13.3807 6 14.5 7.11929 14.5 8.5C14.5 9.88071 13.3807 11 12 11ZM8.5 13H12H14C15.3807 13 16.5 14.1193 16.5 15.5C16.5 16.8807 15.3807 18 14 18H8.5V13Z"/>
-</svg></span>BINGO</div>
-        <div class="item"><span class="ico" name="promo"><svg width="25" height="24" viewBox="0 0 25 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4.5 4C4.5 2.89543 5.39543 2 6.5 2H18.5C19.6046 2 20.5 2.89543 20.5 4V21C20.5 21.3746 20.2907 21.7178 19.9576 21.8892C19.6245 22.0606 19.2236 22.0315 18.9188 21.8137L12.5 17.2289L6.08124 21.8137C5.77642 22.0315 5.37549 22.0606 5.04242 21.8892C4.70935 21.7178 4.5 21.3746 4.5 21V4ZM18.5 4L6.5 4V19.0568L11.9188 15.1863C12.2665 14.9379 12.7335 14.9379 13.0812 15.1863L18.5 19.0568V4Z"/>
-</svg></span>PROMO</div>
-        <div class="item"><span class="ico" name="news"><svg width="25" height="24" viewBox="0 0 25 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 4C4.5 2.89543 5.39543 2 6.5 2H14.5C14.7652 2 15.0196 2.10536 15.2071 2.29289L20.2071 7.29289C20.3946 7.48043 20.5 7.73478 20.5 8V20C20.5 21.1046 19.6046 22 18.5 22H6.5C5.39543 22 4.5 21.1046 4.5 20V4ZM18.0858 8L14.5 4.41421V8H18.0858ZM12.5 4L6.5 4V20H18.5V10H13.5C12.9477 10 12.5 9.55228 12.5 9V4ZM8.5 13C8.5 12.4477 8.94772 12 9.5 12H15.5C16.0523 12 16.5 12.4477 16.5 13C16.5 13.5523 16.0523 14 15.5 14H9.5C8.94772 14 8.5 13.5523 8.5 13ZM8.5 17C8.5 16.4477 8.94772 16 9.5 16H15.5C16.0523 16 16.5 16.4477 16.5 17C16.5 17.5523 16.0523 18 15.5 18H9.5C8.94772 18 8.5 17.5523 8.5 17Z"/>
-</svg></span>NEWS</div>
-        <div class="item"><span class="ico" name="my"><svg width="25" height="24" viewBox="0 0 25 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.5 4C10.2909 4 8.5 5.79086 8.5 8C8.5 10.2091 10.2909 12 12.5 12C14.7091 12 16.5 10.2091 16.5 8C16.5 5.79086 14.7091 4 12.5 4ZM6.5 8C6.5 4.68629 9.18629 2 12.5 2C15.8137 2 18.5 4.68629 18.5 8C18.5 11.3137 15.8137 14 12.5 14C9.18629 14 6.5 11.3137 6.5 8ZM8.5 18C6.84315 18 5.5 19.3431 5.5 21C5.5 21.5523 5.05228 22 4.5 22C3.94772 22 3.5 21.5523 3.5 21C3.5 18.2386 5.73858 16 8.5 16H16.5C19.2614 16 21.5 18.2386 21.5 21C21.5 21.5523 21.0523 22 20.5 22C19.9477 22 19.5 21.5523 19.5 21C19.5 19.3431 18.1569 18 16.5 18H8.5Z"/>
-</svg>
-</span>MY</div>
+        <span class="bgc"></span>
+        <div class="item focus"><span class="ico focus home" name="home"></span>HOME</div>
+        <div class="item"><span class="ico bingo" name="bingo"></span>BINGO</div>
+        <div class="item"><span class="ico promo" name="promo"></span>PROMO</div>
+        <div class="item"><span class="ico news" name="news"></span>NEWS</div>
+        <div class="item"><span class="ico my" name="my"></span>MY</div>
     </div>
 
 </div>
