@@ -7,8 +7,8 @@
         //声明默认配置项
         let defaultSet =
         {
-            data_domain: 'http://localhost:8888/',
-            //data_domain: 'https://okbingo-e2222cbc833d.herokuapp.com/',
+            //data_domain: 'http://localhost:8888/',
+            data_domain: 'https://okbingo-e2222cbc833d.herokuapp.com/',
             data_domain_path:'/public/index.php',
             bingo_game_fav: $bingo_game_fav
         };
